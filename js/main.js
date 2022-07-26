@@ -1,10 +1,19 @@
 "use strict";
 
 {
-  const x = 100;
-  console.log(x);
+  // const score = 80;
+  // const score = 90;
+  // const score = 40;
 
+  const scores = [80, 90, 40];
+  console.log(scores);
 }
+
+// {
+//   const x = 100;
+//   console.log(x);
+
+// }
 
 
 // const x = 2;
