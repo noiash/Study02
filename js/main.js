@@ -1,7 +1,65 @@
 "use strict";
 
 {
-  const numbers = [1, 4, 7, 8, 10];
+  // let x = 1;
+  // let y = x;
+  // x = 5;
+  // console.log(x); //5
+  // console.log(y); //1
+
+  let x = [1, 2];
+  let y = x;
+  x[0] = 5;
+  console.log(x); //[5, 2]
+  console.log(y); //[1, 2]
+}
+  // const point = {
+  //   x: 100, 
+  //   y: 180,
+  // };
+
+  // const keys = Object.keys(point);
+  // keys.forEach(key => {
+  //   console.log(`Key: ${key} Value: ${point[key]}`);
+  // })
+
+  // const points = [
+  //   {x: 30, y: 20},
+  //   {x: 10, y: 50},
+  //   {x: 40, y: 40},
+  // ];
+
+  // console.log(points[1].y);
+
+
+  // const otherProps = {
+  //   r: 4,
+  //   color: 'red',
+  // };
+
+  // console.log(point);
+
+  // const {x, r, ...others} = point;
+  // console.log(x);
+  // console.log(r);
+  // console.log(others);
+
+
+
+  // const point = [100, 180];
+
+  // const point = {x: 100, y: 180};
+
+  // point.x = 120;
+  // point[`x`] = 120;
+
+  // console.log(point.x);
+  // console.log(point[`y`]);
+
+  // point.z = 90;
+  // delete point.y;
+  // console.log(point);
+  // const numbers = [1, 4, 7, 8, 10];
 
   // const evenNumbers = numbers.filter(number => {
   //   if (number % 2 === 0) {
@@ -11,11 +69,9 @@
   //   }
   // });
 
-  const evenNumbers = numbers.filter(number => number % 2 === 0);
+  // const evenNumbers = numbers.filter(number => number % 2 === 0);
+  // console.log(evenNumbers);
 
-  console.log(evenNumbers);
-
-}
   // const prices = [100, 190, 200];
   // const updatedPrices = prices.map((price) => {
   //   return price + 20;
