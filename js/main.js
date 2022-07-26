@@ -1,18 +1,35 @@
 "use strict";
 
 {
+  const str = 'hello';
+
+  // console.log(str.length);
+
+  // str.substring(開始位置、終了位置);
+  // console.log(str.substring(2, 4));
+
+  console.log(str[1]);
+  // str[1] = 'a'; ✖︎
+}
+
   // let x = 1;
   // let y = x;
   // x = 5;
   // console.log(x); //5
   // console.log(y); //1
 
-  let x = [1, 2];
-  let y = x;
-  x[0] = 5;
-  console.log(x); //[5, 2]
-  console.log(y); //[1, 2]
-}
+  // let x = [1, 2];
+  // let y = x;
+  // x[0] = 5;
+  // console.log(x); //[5, 2]
+  // console.log(y); //[5, 2]
+
+
+  // let x = [1, 2];
+  // let y = [...x];
+  // x[0] = 5;
+  // console.log(x); //[5, 2]
+  // console.log(y); //[1, 2]
   // const point = {
   //   x: 100, 
   //   y: 180,
