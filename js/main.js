@@ -1,16 +1,59 @@
 "use strict";
 
 {
-  const str = 'hello';
+  // console.log(Math.random());
+
+  //0, 1, 2
+  //Math.floor(Math.random() * 3)
+  //0, ...., n
+  //Math.floor(Math.random() * (n + 1))
+  //min, ..., max
+  //Math.floor(Math.random() * (max + 1 - min)) + min
+
+  console.log(Math.floor(Math.random() * 6) + 1);
+}
+
+  // const scores = [10, 3, 9];
+
+  // let sum = 0;
+
+  // scores.forEach(score => {
+  //   sum += score;
+  // });
+
+  // const avg = sum / scores.length;
+
+  // console.log(sum);
+  // console.log(avg);
+
+  // console.log(Math.floor(avg)); //7
+  // console.log(Math.ceil(avg)); //8
+  // console.log(Math.round(avg)); //7
+  // console.log(avg.toFixed(3)); // 7.333
+
+
+  // const d = [2019, 11, 14];
+
+  // console.log(d.join('/'));
+  // console.log(d.join(''));
+
+
+  // const t = '17:08:24';
+  // console.log(t.split(':'));
+  // const [hour, minute, second] = t.split(':');
+  // console.log(hour);
+  // console.log(minute);
+  // console.log(second);
+
+  // const str = 'hello';
 
   // console.log(str.length);
 
   // str.substring(開始位置、終了位置);
   // console.log(str.substring(2, 4));
 
-  console.log(str[1]);
+  // console.log(str[1]);
   // str[1] = 'a'; ✖︎
-}
 
   // let x = 1;
   // let y = x;
