@@ -1,6 +1,47 @@
 "use strict";
 
 {
+
+  let i = 0;
+
+  function showTime() {
+    console.log(new Date());
+    const timeoutid = setTimeout(showTime, 1000);
+    i++;
+    if (i > 2) {
+      clearTimeout(timeoutid);
+    }
+  }
+
+  showTime();
+
+}
+  // let i = 0;
+
+  // function showTime() {
+  //   console.log(new Date());
+  //   i++;
+  //   if (i > 2) {
+  //     clearInterval(intervalid);
+  //   }
+  // }
+
+  // const intervalid = setInterval(showTime, 1000);
+
+  // alert('hello');
+  // const answer = confirm('削除しますか？');
+  // if (answer) {
+  //   console.log('削除しました');
+  // } else {
+  //   console.log('キャンセルしました');
+  // }
+  // const d = new Date(2019, 10); //2019/11/01 00:00:00
+  // d.setHours(10, 20, 30); //2019/11/01 10:20:30
+  // d.setDate(31); //2019/12/01 10:20:30
+  // d.setDate(d.getDate() + 3); //2019/12/04 10:20:30
+  // console.log(d);
+
+  // console.log(`${d.getMonth() + 1} 月 ${d.getDate()} 日`);
   // console.log(Math.random());
 
   //0, 1, 2
@@ -10,8 +51,7 @@
   //min, ..., max
   //Math.floor(Math.random() * (max + 1 - min)) + min
 
-  console.log(Math.floor(Math.random() * 6) + 1);
-}
+  // console.log(Math.floor(Math.random() * 6) + 1);
 
   // const scores = [10, 3, 9];
 
