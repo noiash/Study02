@@ -1,21 +1,55 @@
 "use strict";
 
 {
+  const posts = [
+    {
+      text: 'JavaScriptの勉強中・・・',
+      likeCount: 0,
+      // show: function () {
+      //   console.log(`${this.text} - ${this.likeCount}いいね`);
+      // },
+      show() {
+        console.log(`${this.text} - ${this.likeCount}いいね`);
+      },
+    },
+    {
+      text: 'プログラミング楽しい！',
+      likeCount: 0,
+      show() {
+        console.log(`${this.text} - ${this.likeCount}いいね`);
+      },
+    },
+  ];
 
-  let i = 0;
-
-  function showTime() {
-    console.log(new Date());
-    const timeoutid = setTimeout(showTime, 1000);
-    i++;
-    if (i > 2) {
-      clearTimeout(timeoutid);
-    }
-  }
-
-  showTime();
+  // show(posts[0]);
+  posts[0].show();
+  posts[1].show();
 
 }
+  // const name = 'taguchi';
+  // const name = 5;
+
+
+  // try {
+  //   console.log(name.toUpperCase());
+  // } catch (e) {
+  //   console.log(e);
+  // }
+
+  // console.log('Finish!');
+  // let i = 0;
+
+  // function showTime() {
+  //   console.log(new Date());
+  //   const timeoutid = setTimeout(showTime, 1000);
+  //   i++;
+  //   if (i > 2) {
+  //     clearTimeout(timeoutid);
+  //   }
+  // }
+
+  // showTime();
+
   // let i = 0;
 
   // function showTime() {
