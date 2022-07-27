@@ -1,29 +1,52 @@
 "use strict";
 
 {
-  const posts = [
-    {
-      text: 'JavaScriptの勉強中・・・',
-      likeCount: 0,
-      // show: function () {
-      //   console.log(`${this.text} - ${this.likeCount}いいね`);
-      // },
-      show() {
-        console.log(`${this.text} - ${this.likeCount}いいね`);
-      },
-    },
-    {
-      text: 'プログラミング楽しい！',
-      likeCount: 0,
-      show() {
-        console.log(`${this.text} - ${this.likeCount}いいね`);
-      },
-    },
-  ];
+  class Post { //親クラス
+    constructor(text) {
+      this.text =  text;
+      this.likeCount = 0;
+    }
+    show() {
+      console.log(`${this.text} - ${this.likeCount}likes`);
+    }
 
-  // show(posts[0]);
-  posts[0].show();
-  posts[1].show();
+    like() {
+      this.likeCount++;
+      this.show();
+    }
+  }
+
+  class SponsoredPost extends Post { //子クラス
+    constructor(text, sponsor) {
+      super(text);
+      this.sponsor = sponsor;
+    }
+
+    show() {
+      super.show();
+      console.log(`...sponsored by ${this.sponsor}`);
+    }
+  }
+    //静的メソッド
+    //thisは使えない
+    // static showInfo() {
+    //   console.log('Post class version 1.0');
+    // }
+
+
+    const posts = [
+      new Post('JavaScriptの勉強中・・・'),
+      new Post('プログラミング楽しい！'),
+      new SponsoredPost('３分動画でマスターしよう', 'dotinstall'),
+    ];
+
+  // posts[0].like();
+
+  posts[2].show();
+  posts[2].like();
+  
+
+  // Post.showInfo();
 
 }
   // const name = 'taguchi';
